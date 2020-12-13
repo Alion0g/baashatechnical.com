@@ -1,0 +1,108 @@
+html{ 
+    scroll-behavior: smooth; 
+    -webkit-text-size-adjust: 100%; 
+}
+
+*{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'Recursive', sans-serif; }
+:root{ --tran: all 0.4s linear;}
+a{ text-decoration: none; }
+
+/* @@@@@@@@@@@ PRELOADER START @@@@@@@@ */
+
+#loader{
+	position: fixed;
+	height: 100vh; width: 100%;
+	background: #fff url('../img/gif/preloader.gif') no-repeat center;
+	z-index: 999999;
+	background-size: 5% 10%;	
+}
+
+.main_name,#button,#navbarNav ul li a{
+    transition: all .5s;
+}
+
+.main_name{
+	font-size: 2.2rem;
+	letter-spacing: 0.15rem;
+	font-weight: bold;
+	margin-left: 4.5rem;
+}
+#navbarNav{
+	margin-right: 5rem;
+	text-transform: uppercase;
+}
+
+#navbarNav ul li a{
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.09rem;
+	letter-spacing: 2px;
+	margin-right: 2rem;
+}
+#navbarNav ul li a:hover{
+	color: orange;
+}
+
+.small{
+    height: 60px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.small .main_name{
+    font-size: 2.2rem;
+    margin-top: 5px;
+}
+
+.small li a{
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.about-img{ background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url('../img/Longue_Vue.webp');
+    height: 70vh; width: 75%; background-size: 100% 100%;
+    margin-left: 50%; transform: translateX(-50%); 
+    margin-bottom: 5rem; margin-top: 7rem; }
+
+.about-img h1{
+    color: #d4dd2c;
+    letter-spacing: 3px;
+    line-height: 12rem;
+    animation: zoominout 0.7s linear infinite alternate-reverse;
+}
+@keyframes zoominout{
+    from { transform: scale(.9); }
+    to { transform: scale(1); }
+}
+.about-img h2{
+    font-size: 2rem;
+    color: #fff;
+    font-family: abcd;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.buton{ text-align: center; margin-top: 3rem;}
+.buton button{
+    font-weight: bold;
+    padding: 8px 50px;
+    background: transparent;
+    letter-spacing: 1.5px;
+    color: #fff;
+    border-radius: 30px;
+    border-color: #fff;
+    border: none;
+    outline: none;
+    border: 1px solid #fff;
+}
+.buton button:hover{ color: #000; background: #fff; }
+
+.ali-img img{
+	height: 200px;
+    margin-left: 10.5rem;
+    margin-bottom: 5rem;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.bor___der{
+    border-bottom: 1px solid #000;
+}
