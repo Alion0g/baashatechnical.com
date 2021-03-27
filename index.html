@@ -1,463 +1,607 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="img/ICON.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <title>BaashaTechnical</title>
+
+<style>
+.project--part1,
+.project--part2,
+.project--part3,
+.project--part4,
+.offer--part1,
+.offer--part2,
+.templates--part1,
+.source--part1,
+.source--part2,
+.source-img--part1,
+.source-img--part2,
+.source-img--part3,
+.source-img--part4,
+.carousel--about,
+.cont-feel--para,
+.cont--information,
+.cont--box
+{ opacity: 0; }
+.project--part1.animated,
+.project--part2.animated,
+.project--part3.animated,
+.project--part4.animated,
+.offer--part1.animated,
+.offer--part1.animated,
+.templates--part1.animated,
+.source--part1.animated,
+.source--part2.animated,
+.source-img--part1.animated,
+.source-img--part2.animated,
+.source-img--part3.animated,
+.source-img--part4.animated,
+.carousel--about.animated,
+.cont-feel--para.animated,
+.cont--information.animated,
+.cont--box.animated
+{ opacity: 1; }
+</style>
+
   </head>
   <body onload="myfunction()">
-
-<!-- PRELOADER START -->
-<div id="loading"></div>
-<!-- PRELOADER end -->
-
-<!------------------------------------  TOP ( NAVBAR ) START  ------------------------------------>
-<div class="bg_img">
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="total">
-    <h2 class="main_name navbar-brand text-white" href="?">MOHAMMAD <span class="text-warning">A</span>LI</h2>
-      <button class="navbar-toggler mr-4" id="button" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link  text-warning" title="HOME" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" title="SERVICES" href="#servicediv">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" title="SOURCECODE" href="#sourcecode">SourceCode</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" title="ABOUTUS" href="file:///F:/1%20=%20WEBSITES/PERSONAL/aboutus.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" title="CONTACT" href="#contactme">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <div class="mid_section d-flex justify-content-center align-items-center flex-column text-white">
-    <h1 class="mid_section__name font-weight-bold">Welcome to BaashaTechnical</h1>
-    <h3 class="mid_section__about">About Me</h3>
-    <h2 class="animate">
-      <span class="font-weight-bold">A WEBSITE FOR</span>
-      <div>
-        <ul class="flip">
-          <li>TECHNICAL KNOWLEDGE</li>
-          <li>TECHNICAL ISSUE</li>
-          <li>PROGRAMMER</li>
-          <li>WEB DEVELOPER</li>
-        </ul>                
+    <!-- PRELOADER -->
+    <div id="loading"></div>
+    <!-- FRONT PART -->
+    <div class="bg_img">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="total">
+        <h2 class="main_name navbar-brand text-white" href="?">MOHAMMAD <span class="text-warning">A</span>LI</h2>
+          <button class="navbar-toggler mr-4" id="button" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link  text-warning" title="HOME" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" title="SERVICES" href="#servicediv">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" title="SOURCECODE" href="#sourcecode">SourceCode</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" title="ABOUTUS" href="file:///F:/1%20=%20WEBSITES/PERSONAL/aboutus.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" title="CONTACT" href="#contactme">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="mid_section d-flex justify-content-center align-items-center flex-column text-white">
+        <h1 class="mid_section__name font-weight-bold">Welcome to BaashaTechnical</h1>
+        <h3 class="mid_section__about">About Me</h3>
+        <h2 class="animate">
+          <span class="font-weight-bold">A WEBSITE FOR</span>
+          <div>
+            <ul class="flip">
+              <li>TECHNICAL KNOWLEDGE</li>
+              <li>TECHNICAL ISSUE</li>
+              <li>PROGRAMMER</li>
+              <li>WEB DEVELOPER</li>
+            </ul>                
+          </div>
+        </h2>
+        <div class="social_icons">
+          <a href="https://www.facebook.com/BaashaAlbido/" title="FACEBOOK" target="_fac"><i id="icons" class="fa fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com/baashaalbido/" title="INSTAGRAM" target="_ins"><i id="icons" class="fa fa-instagram"></i></a>
+          <a href="https://twitter.com/BaashaAlbido" title="TWITTER" target="_twi"><i id="icons" class="fa fa-twitter-square"></i></a>
+          <a href="https://github.com/Baasha01" title="GITHUB" target="_git"><i id="icons" class="fa fa-github-square"></i></a>
+          <a href="https://www.youtube.com/channel/UCvcek9iSCYPOvP6IX9u4sXA" title="YOUTUBE" target="_ali"><i id="icons" class="fa fa-youtube-square"></i> </a>
+        </div>
+        <div class="mouse_center">
+          <div class="field">
+            <div class="mouse"></div>
+          </div>
+        </div>
       </div>
-    </h2>
-    <div class="social_icons">
-      <a href="https://www.facebook.com/BaashaAlbido/" title="FACEBOOK" target="_fac"><i id="icons" class="fa fa-facebook-square"></i></a>
-      <a href="https://www.instagram.com/baashaalbido/" title="INSTAGRAM" target="_ins"><i id="icons" class="fa fa-instagram"></i></a>
-      <a href="https://twitter.com/BaashaAlbido" title="TWITTER" target="_twi"><i id="icons" class="fa fa-twitter-square"></i></a>
-      <a href="https://github.com/Baasha01" title="GITHUB" target="_git"><i id="icons" class="fa fa-github-square"></i></a>
-      <a href="https://www.youtube.com/channel/UCvcek9iSCYPOvP6IX9u4sXA" title="YOUTUBE" target="_ali"><i id="icons" class="fa fa-youtube-square"></i> </a>
+      <div class="bac__img2"></div>
     </div>
-    <div class="mouse_center">
-      <div class="field">
-        <div class="mouse"></div>
+    <!-- WEBSITE CREATED -->
+    <section class="project_work">
+      <div class="heading text-center">
+        <p class="font-weight-bold heading--animation-1">MORE THAN 1,000 WEBSITES CREATED</p>
       </div>
-    </div>
-  </div>
-  <div class="bac__img2"></div>
-</div>
-<!------------------------------------  TOP ( NAVBAR ) END  ------------------------------------>
-
-<!------------------------------------  COUNTING PROJECTS START  ------------------------------------>
-<section class="project_work">
-  <div class="heading text-center">
-    <p class="font-weight-bold">MORE THAN 1,000 WEBSITES CREATED</p>
-  </div>
-  <div class="container d-flex justify-content-around align-items-center text-center" id="work_awards">
-    <div>
-      <h1 class="count">1500</h1> 
-      <h4 class="award">CMS Installation</h4>
-    </div>
-    <div>
-      <h1 class="count">2000</h1> 
-      <h4 class="award">CMS Installation</h4>
-    </div>
-    <div>
-      <h1 class="count">700</h1> 
-      <h4 class="award">CMS Installation</h4>
-    </div>
-    <div>
-      <h1 class="count">500</h1> 
-      <h4 class="award">CMS Installation</h4>
-    </div>
-  </div>
-</section>
-<!------------------------------------  COUNTING PROJECTS END  ------------------------------------>
-
-<!------------------------------------  OFFERS PROJECT START  ------------------------------------>
-<section class="serviceoffers" id="servicediv">
-  <h1 class="font-weight-bold container mainheading text-center">WHAT DO WE OFFER</h1>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 col-md-12 col-10 offset-1 offset-lg-0">
-        <div class="names my-3">
-          <h1 class="font-weight-bold">HTML</h1>
-            <div class="progress bg-dark w-75">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:100%">100%</div>
+      <div class="container d-flex justify-content-around align-items-center text-center" id="work_awards">
+        <div class="project--part1">
+          <h1 class="count">1500</h1> 
+          <h4 class="award">CMS Installation</h4>
+        </div>
+        <div class="project--part2">
+          <h1 class="count">2000</h1> 
+          <h4 class="award">CMS Installation</h4>
+        </div>
+        <div class="project--part3">
+          <h1 class="count">700</h1> 
+          <h4 class="award">CMS Installation</h4>
+        </div>
+        <div class="project--part4">
+          <h1 class="count">500</h1> 
+          <h4 class="award">CMS Installation</h4>
+        </div>
+      </div>
+    </section>
+    <!-- OFFERS -->
+    <section class="serviceoffers" id="servicediv">
+      <h1 class="font-weight-bold container mainheading text-center heading--animation-2">WHAT DO WE OFFER</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-10 offset-1 offset-lg-0 offer--part1">
+            <div class="names my-3">
+              <h1 class="font-weight-bold">HTML</h1>
+                <div class="progress bg-dark w-75">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:100%">100%</div>
+                </div>
             </div>
-        </div>
-        <div class="names my-3">
-            <h1 class="font-weight-bold">CSS</h1>
-              <div class="progress bg-dark w-75">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:96%">96%</div>
+            <div class="names my-3">
+                <h1 class="font-weight-bold">CSS</h1>
+                  <div class="progress bg-dark w-75">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:96%">96%</div>
+                  </div>
+            </div>
+            <div class="names my-3">
+                <h1 class="font-weight-bold">JAVASCRIPT</h1>
+                  <div class="progress bg-dark w-75">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:76%">76%</div>
+                  </div>
+            </div>
+            <div class="names my-3">
+                <h1 class="font-weight-bold">REACTJS</h1>
+                  <div class="progress bg-dark w-75">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width:61%">61%</div>
+                  </div>
+            </div>
+            <div class="names my-3">
+                <h1 class="font-weight-bold">NODEJS</h1>
+                  <div class="progress bg-dark w-75">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:73%">73%</div>
+                  </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-12 servicediv offer--part2">
+              <div class="row">
+                  <div class="col-lg-2 col-2 service-icon">
+                    <i class="fa fa-2x fa-desktop"></i>
+                  </div>
+                  <div class="col-lg-10 col-10">
+                    <h2>Website Development</h2>
+                    <p class="service_para"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                  </div>
               </div>
-        </div>
-        <div class="names my-3">
-            <h1 class="font-weight-bold">JAVASCRIPT</h1>
-              <div class="progress bg-dark w-75">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:76%">76%</div>
+              <div class="row">
+                  <div class="col-lg-2 col-2 service-icon">
+                    <i class="fa fa-2x fa-wifi"></i>
+                  </div>
+                  <div class="col-lg-10 col-10">
+                    <h2>TECHNICAL KNOWLDEG</h2>
+                    <p class="service_para"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                  </div>
               </div>
-        </div>
-        <div class="names my-3">
-            <h1 class="font-weight-bold">REACTJS</h1>
-              <div class="progress bg-dark w-75">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width:61%">61%</div>
+              <div class="row">
+                  <div class="col-lg-2 col-2 service-icon">
+                    <i class="fa fa-2x fa-phone"></i>
+                  </div>
+                  <div class="col-lg-10 col-10">
+                    <h2>Support 24/7</h2>
+                    <p class="service_para"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                  </div>
               </div>
-        </div>
-        <div class="names my-3">
-            <h1 class="font-weight-bold">NODEJS</h1>
-              <div class="progress bg-dark w-75">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:73%">73%</div>
-              </div>
+          </div>
         </div>
       </div>
-      <div class="col-lg-6 col-md-12 col-12 servicediv">
-          <div class="row">
-              <div class="col-lg-2 col-2 service-icon">
-                <i class="fa fa-2x fa-desktop"></i>
-              </div>
-              <div class="col-lg-10 col-10">
-                <h2>Website Development</h2>
-                <p class="service_para"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-lg-2 col-2 service-icon">
-                <i class="fa fa-2x fa-wifi"></i>
-              </div>
-              <div class="col-lg-10 col-10">
-                <h2>TECHNICAL KNOWLDEG</h2>
-                <p class="service_para"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-lg-2 col-2 service-icon">
-                <i class="fa fa-2x fa-phone"></i>
-              </div>
-              <div class="col-lg-10 col-10">
-                <h2>Support 24/7</h2>
-                <p class="service_para"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-              </div>
-          </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!------------------------------------  OFFERS PROJECT END  ------------------------------------>
-
-<!------------------------------------  WORK AND SOURCECODE START  ------------------------------------>
-<div class="workandsourcecode container">
-  <h1 class="text-center font-weight-bold mainheading">MY WORK AND SOURCECODE</h1>
-  <div class="sourceimag d-flex">
-    <h4 class="temp font-weight-bold my-3">4,300+<br>more<br>Templates</h4>
-    <div class="imag1"><h3>Mackup</h3></div>
-    <div class="imag2"><h3>Logo</h3></div>
-    <div class="imag3"><h3>Designs</h3></div>
-    <div class="imag4"><h3>Video</h3></div>
-  </div>
-  <div class="sourceimag1 d-flex" >
-    <div class="imag5"><h3>Intro</h3></div>
-    <div class="imag6"><h3>Gaming</h3></div>
-    <div class="imag7"><h3>Animation</h3></div>
-    <div class="imag8"><h3>And More</h3></div>
-  </div>
-  <div class="bg_sourceimg img-fluid" id="sourcecode">
-    <h1 class="font-weight-bold text-center">MOHAMMAD ALI</h1>
-    <h2>HOUSE OF WEB DEVELOPER <br> AND TECHNOLOGY</h2>
-    <div class="buton">
-    <a href="https://www.youtube.com/channel/UC7lj-LvtHxd1hrF_NqdwvuQ" target="_youube"><button type="submite">Vloge</button></a>
-    <a href="@"><button type="submite">Bloge</button></a>
-    </div>
-  </div>
-  <div class="main_div_of_sourceimg container">
-    <div class="row">
-      <!-- FIRST SOURCECODE IMAGE -->
-      <div class="col-lg-3 col-md-3 col-12">
-        <div class="first__div__sourceimg">
-          <img src="img/font_color_slider_sourceimg.png"> 
-          <a href="https://github.com/Baasha01/SC-ColorSlider/blob/main/index.html" target="_sli">
-          <div class="t_e_x_t">
-          <p>Font Color Slider Master CSS</p>
-          </div>
-          </a>
-        </div>        
-      </div>
-      <!-- SECOND SOURCECODE IMAGE -->
-      <div class="col-lg-3 col-md-3 col-12">
-        <div class="first__div__sourceimg">
-          <img src="img/calculator_sourceimg.png"> 
-          <a href="icon-toggle.html" target="_sli">
-          <div class="t_e_x_t">
-          <p>Calculator With html and css</p>
-          </div>
-          </a>
+    </section>
+    <!-- SOURCECODE -->
+    <div class="workandsourcecode container">
+      <h1 class="text-center font-weight-bold mainheading heading--animation-3">MY WORK AND SOURCECODE</h1>
+      <div class="source--part1">
+        <div class="sourceimag d-flex">
+          <h4 class="temp font-weight-bold my-3">4,300+<br>more<br>Templates</h4>
+          <div class="imag1"><h3>Mackup</h3></div>
+          <div class="imag2"><h3>Logo</h3></div>
+          <div class="imag3"><h3>Designs</h3></div>
+          <div class="imag4"><h3>Video</h3></div>
+        </div>
+        <div class="sourceimag1 d-flex" >
+          <div class="imag5"><h3>Intro</h3></div>
+          <div class="imag6"><h3>Gaming</h3></div>
+          <div class="imag7"><h3>Animation</h3></div>
+          <div class="imag8"><h3>And More</h3></div>
         </div>
       </div>
-      <!-- THIRD SOURCECODE IMAGE -->
-      <div class="col-lg-3 col-md-3 col-12">
-        <div class="first__div__sourceimg">
-          <img src="img/music_beat_sourceimg.png">
-          <a href="https://github.com/Baasha01/SC-MusicBeat/blob/main/index.html" target="_sli"> 
-          <div class="t_e_x_t">
-          <p>make music beat with Master CSS</p>
-          </div>
-          </a>
+      <div class="bg_sourceimg img-fluid source--part2" id="sourcecode">
+        <h1 class="font-weight-bold text-center">MOHAMMAD ALI</h1>
+        <h2>HOUSE OF WEB DEVELOPER <br> AND TECHNOLOGY</h2>
+        <div class="buton">
+        <a href="https://www.youtube.com/channel/UC7lj-LvtHxd1hrF_NqdwvuQ" target="_youube"><button type="submite">Vloge</button></a>
+        <a href="@"><button type="submite">Bloge</button></a>
         </div>
       </div>
-      <!-- FOURTH SOURCECODE IMAGE -->
-      <div class="col-lg-3 col-md-3 col-12">
-        <div class="first__div__sourceimg">
-          <img src="img/smoke_effect_sourceimg.png"> 
-          <a href="@" target="_sli">
-          <div class="t_e_x_t">
-          <p>Font smoke effect with Master CSS</p>
-          </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!------------------------------------  WORK AND SOURCECODE END  ------------------------------------>
-
-<!------------------------------------  CARASAUL ABOUT ME START  ------------------------------------>
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active" id="aboutmesmall">
-      <img src="img/BAASHA.png">
-      <h3 class="text-center text-white my-5" style="letter-spacing:2px;">"Mohammad Ali aka BAASHA is a Web Developer.<br>BAASHA whant to help others by providing free video on Web<br>Development and School/University impoertant topics"</h3>
-      <p class="text-warning text-center">Mohammad Ali, CEO of BAASHA</p>
-    </div>
-    <div class="carousel-item" id="aboutmesmall">
-      <img src="img/BAASHA.png">
-      <h3 class="text-center text-white my-5" style="letter-spacing:1.5px;">"Mohammad Ali aka BAASHA is a Web Developer.<br>BAASHA whant to help others by providing free video on Web<br>Development and School/University impoertant topics"</h3>
-      <p class="text-warning text-center">Mohammad Ali, CEO of BAASHA</p>
-    </div>
-    <div class="carousel-item" id="slideleft3">
-      <img src="img/IRONMAN.jpg" class="rounded-circle">
-      <h3 class="text-center text-white my-5" style="letter-spacing:1.5px;">"Mohammad Ali aka BAASHA is a Web Developer.<br>BAASHA whant to help others by providing free video on Web<br>Development and School/University impoertant topics"</h3>
-      <p class="text-warning text-center">Mohammad Ali, CEO of BAASHA</p>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-<!------------------------------------  CARASAUL ABOUT ME END  ------------------------------------>
-
-<!------------------------------------  CONATACT PAGE START  ------------------------------------>
-<section class="contact" id="contactme">
-  <h1 class="text-center font-weight-bold mainheading">Get In Touch</h1>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-lg-6 col-12">
-        <div class="con__tact___info">
-          <h3 class="font-weight-bold">Feel Free to Contact</h3>
-          <p>Hello everyon have a great day i am here to help<br>
-          you. If you want to know somthing or you have any <br>
-          any suggetion than pleade mail me. Thank You</p>
-
-          <div class="statecity d-flex my-4">
-            <i class="text-white text-center">🎞</i>
-            <p class="ml-4">INDIA, Chandigarh</p>
-          </div>
-          <div class="statecity d-flex my-4">
-            <i class="text-white text-center">☎</i>
-            <p class="ml-4">+91 6239190435</p>
-          </div>
-          <div class="statecity d-flex my-4">
-            <i class="fa fa-envelope-o text-white text-center"></i>
-            <p class="ml-4">Baasha1014@gmail.com</p>
-          </div>
-          <div class="statecity d-flex my-4">
-            <i class="fa fa-globe text-white text-center"></i>
-            <p class="ml-4">Www.Baasha.com</p>
-          </div>
-        </div>
-        <!------------ SUBSCRIBE BUTTON ------------>
-        <button type="button" id="subscribebtn" class="btn btn-primary subbtn" data-toggle="modal"
-        data-target="#exampleModal" style="border-radius:0.5rem;">SUBSCRIBE</button>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Confirme</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
+      <div class="main_div_of_sourceimg container">
+        <div class="row">
+          <!-- FIRST SOURCECODE IMAGE -->
+          <div class="col-lg-3 col-md-3 col-12 source-img--part1">
+            <div class="first__div__sourceimg">
+              <img src="img/font_color_slider_sourceimg.png"> 
+              <a href="https://github.com/Baasha01/SC-ColorSlider/blob/main/index.html" target="_sli">
+              <div class="t_e_x_t">
+              <p>Font Color Slider Master CSS</p>
               </div>
-              <div class="modal-body" style="font-size: 2rem">Do you whant to subscribe this website..!</div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Yes</button>
-                <button type="button" class="btn btn-primary" data-dismiss="modal" style="border-radius:0.3rem; height:2.6rem">Dismise</button>
+              </a>
+            </div>        
+          </div>
+          <!-- SECOND SOURCECODE IMAGE -->
+          <div class="col-lg-3 col-md-3 col-12 source-img--part2">
+            <div class="first__div__sourceimg">
+              <img src="img/calculator_sourceimg.png"> 
+              <a href="icon-toggle.html" target="_sli">
+              <div class="t_e_x_t">
+              <p>Calculator With html and css</p>
               </div>
+              </a>
+            </div>
+          </div>
+          <!-- THIRD SOURCECODE IMAGE -->
+          <div class="col-lg-3 col-md-3 col-12 source-img--part3">
+            <div class="first__div__sourceimg">
+              <img src="img/music_beat_sourceimg.png">
+              <a href="https://github.com/Baasha01/SC-MusicBeat/blob/main/index.html" target="_sli"> 
+              <div class="t_e_x_t">
+              <p>make music beat with Master CSS</p>
+              </div>
+              </a>
+            </div>
+          </div>
+          <!-- FOURTH SOURCECODE IMAGE -->
+          <div class="col-lg-3 col-md-3 col-12 source-img--part4">
+            <div class="first__div__sourceimg">
+              <img src="img/smoke_effect_sourceimg.png"> 
+              <a href="@" target="_sli">
+              <div class="t_e_x_t">
+              <p>Font smoke effect with Master CSS</p>
+              </div>
+              </a>
             </div>
           </div>
         </div>
-        <!------------ SUBSCRIBE BUTTON ------------>
-      </div>
-      <div class="col-lg-6 col-md-6 col-12 con__tact__box">
-        <div class="contact_box">
-          <div class="contact_social__icons">
-            <a href="https://www.facebook.com/BaashaAlbido/" title="FACEBOOK" target="_fac"><i id="social__icons" class="fa fa-facebook-square"></i></a>
-            <a href="https://www.instagram.com/baashaalbido/" title="INSTAGRAM" target="_ins"><i id="social__icons" class="fa fa-instagram"></i></a>
-            <a href="https://twitter.com/BaashaAlbido" title="FACEBOOK" target="_fac"><i id="social__icons" class="fa fa-twitter-square"></i></a>
-            <a href="https://github.com/Baasha01" title="GITHUB" target="_git"><i id="social__icons" class="fa fa-github-square"></i></a>
-            <a href="https://www.youtube.com/channel/UCvcek9iSCYPOvP6IX9u4sXA" title="YOUTUBE" target="_ali"><i id="social__icons" class="fa fa-youtube-square"></i> </a>
-          </div>
-          <div class="input_and__message">
-            <input type="text" name="name" placeholder="Name" autocomplete="off">
-            <input type="email" name="email" placeholder="E-mail" autocomplete="off">
-            <input type="number" name="mobile" placeholder="Mobile / Phone" autocomplete="off">
-            <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Message"></textarea>
-          </div>
-          <div class="send_btn">
-            <a href="index.html"><button type="submit">Send</button></a>
-          </div>
-        </div>        
       </div>
     </div>
-  </div>
-</section>
-<!------------------------------------  CONATACT PAGE END  ------------------------------------>
-
-<!-- ------------------------------------  COPYRIGHT 2021 START  ------------------------------------ -->
-<footer class="copyright">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 col-lg-4 col-12">
-       <div class="copyright_social__icons">
-        <a href="https://www.facebook.com/BaashaAlbido/" title="FACEBOOK" target="_fac"><i id="copyright_icons" class="fa fa-facebook-square"></i></a>
-        <a href="https://www.instagram.com/baashaalbido/" title="INSTAGRAM" target="_ins"><i id="copyright_icons" class="fa fa-instagram"></i></a>
-        <a href="https://twitter.com/BaashaAlbido" title="TWITTER" target="_twi"><i id="copyright_icons" class="fa fa-twitter-square"></i></a>
-        <a href="https://github.com/Baasha01" title="GITHUB" target="_git"><i id="copyright_icons" class="fa fa-github-square"></i></a>
-        <a href="https://www.youtube.com/channel/UCvcek9iSCYPOvP6IX9u4sXA" title="YOUTUBE" target="_ali"><i id="copyright_icons" class="fa fa-youtube-square"></i> </a>
-       </div>
+    <!-- CAROUSEL ABOUT-ME -->
+    <div id="carouselExampleIndicators" class="carousel slide carousel--about" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active" id="aboutmesmall">
+          <img src="img/BAASHA.png">
+          <h3 class="text-center text-white my-5" style="letter-spacing:2px;">"Mohammad Ali aka BAASHA is a Web Developer.<br>BAASHA whant to help others by providing free video on Web<br>Development and School/University impoertant topics"</h3>
+          <p class="text-warning text-center">Mohammad Ali, CEO of BAASHA</p>
+        </div>
+        <div class="carousel-item" id="aboutmesmall">
+          <img src="img/BAASHA.png">
+          <h3 class="text-center text-white my-5" style="letter-spacing:1.5px;">"Mohammad Ali aka BAASHA is a Web Developer.<br>BAASHA whant to help others by providing free video on Web<br>Development and School/University impoertant topics"</h3>
+          <p class="text-warning text-center">Mohammad Ali, CEO of BAASHA</p>
+        </div>
+        <div class="carousel-item" id="slideleft3">
+          <img src="img/IRONMAN.jpg" class="rounded-circle">
+          <h3 class="text-center text-white my-5" style="letter-spacing:1.5px;">"Mohammad Ali aka BAASHA is a Web Developer.<br>BAASHA whant to help others by providing free video on Web<br>Development and School/University impoertant topics"</h3>
+          <p class="text-warning text-center">Mohammad Ali, CEO of BAASHA</p>
+        </div>
       </div>
-      <div class="col-md-4 col-lg-4 col-12">
-       <div class="copyright_content">
-        <p>Copyright ©BaashaTechnical 2021</p>
-       </div>
-      </div>
-      <div class="col-md-4 col-lg-4 col-12">
-       <div class="copyright_content">
-        <p>DISCLAIMER <span class="ml-4">PRIVACY POLICY</span></p>
-       </div>
-      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-  </div>
-</footer>
-<!--------------------------------------  COPYRIGHT 2021 END  -------------------------------------->
+    <!-- CONTACT -->
+    <section class="contact" id="contactme">
+      <h1 class="text-center font-weight-bold mainheading heading--animation-4">Get In Touch</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-6 col-12">
+            <div class="con__tact___info cont--information">
+              <h3 class="font-weight-bold cont-feel--para">Feel Free to Contact</h3>
+              <p>Hello everyon have a great day i am here to help<br>
+              you. If you want to know somthing or you have any <br>
+              any suggetion than pleade mail me. Thank You</p>
 
-<!---------------------------------------- SCROLL BUTTON -------------------------------------->
-<div class="scrolltop float-right">
-  <i class="fa fa-arrow-up" title="GO TOP" onclick="topfunction()" id="mybtn"></i>
-</div>
-<!---------------------------------------- SCROLL BUTTON ---------------------------------------->
+              <div class="statecity d-flex my-4">
+                <i class="text-white text-center">🎞</i>
+                <p class="ml-4">INDIA, Chandigarh</p>
+              </div>
+              <div class="statecity d-flex my-4">
+                <i class="text-white text-center">☎</i>
+                <p class="ml-4">+91 6239190435</p>
+              </div>
+              <div class="statecity d-flex my-4">
+                <i class="fa fa-envelope-o text-white text-center"></i>
+                <p class="ml-4">Baasha1014@gmail.com</p>
+              </div>
+              <div class="statecity d-flex my-4">
+                <i class="fa fa-globe text-white text-center"></i>
+                <p class="ml-4">Www.Baasha.com</p>
+              </div>
+            </div>
+            <!------------ SUBSCRIBE BUTTON ------------>
+            <button type="button" id="subscribebtn" class="btn btn-primary subbtn" data-toggle="modal"
+            data-target="#exampleModal" style="border-radius:0.5rem;">SUBSCRIBE</button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Confirme</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body" style="font-size: 2rem">Do you whant to subscribe this website..!</div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Yes</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" style="border-radius:0.3rem; height:2.6rem">Dismise</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!------------ SUBSCRIBE BUTTON ------------>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12 con__tact__box cont--box">
+            <div class="contact_box">
+              <div class="contact_social__icons">
+                <a href="https://www.facebook.com/BaashaAlbido/" title="FACEBOOK" target="_fac"><i id="social__icons" class="fa fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/baashaalbido/" title="INSTAGRAM" target="_ins"><i id="social__icons" class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/BaashaAlbido" title="FACEBOOK" target="_fac"><i id="social__icons" class="fa fa-twitter-square"></i></a>
+                <a href="https://github.com/Baasha01" title="GITHUB" target="_git"><i id="social__icons" class="fa fa-github-square"></i></a>
+                <a href="https://www.youtube.com/channel/UCvcek9iSCYPOvP6IX9u4sXA" title="YOUTUBE" target="_ali"><i id="social__icons" class="fa fa-youtube-square"></i> </a>
+              </div>
+              <div class="input_and__message">
+                <input type="text" name="name" placeholder="Name" autocomplete="off">
+                <input type="email" name="email" placeholder="E-mail" autocomplete="off">
+                <input type="number" name="mobile" placeholder="Mobile / Phone" autocomplete="off">
+                <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Message"></textarea>
+              </div>
+              <div class="send_btn">
+                <a href="index.html"><button type="submit">Send</button></a>
+              </div>
+            </div>        
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- COPYRIGHT -->
+    <footer class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-lg-4 col-12">
+           <div class="copyright_social__icons">
+            <a href="https://www.facebook.com/BaashaAlbido/" title="FACEBOOK" target="_fac"><i id="copyright_icons" class="fa fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/baashaalbido/" title="INSTAGRAM" target="_ins"><i id="copyright_icons" class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/BaashaAlbido" title="TWITTER" target="_twi"><i id="copyright_icons" class="fa fa-twitter-square"></i></a>
+            <a href="https://github.com/Baasha01" title="GITHUB" target="_git"><i id="copyright_icons" class="fa fa-github-square"></i></a>
+            <a href="https://www.youtube.com/channel/UCvcek9iSCYPOvP6IX9u4sXA" title="YOUTUBE" target="_ali"><i id="copyright_icons" class="fa fa-youtube-square"></i> </a>
+           </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-12">
+           <div class="copyright_content">
+            <p>Copyright ©BaashaTechnical 2021</p>
+           </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-12">
+           <div class="copyright_content">
+            <p>DISCLAIMER <span class="ml-4">PRIVACY POLICY</span></p>
+           </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- TOP BUTTON -->
+    <div class="scrolltop float-right">
+      <i class="fa fa-arrow-up" title="GO TOP" onclick="topfunction()" id="mybtn"></i>
+    </div>
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
 
-
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous"></script>
-
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
-
-    <!---------------------------------------- PRELOADER START ---------------------------------------->
-    <script>    
-        var preloader = document.getElementById('loading');
-        function myfunction(){
-            preloader.style.display = 'none';
-        }
-    </script>
-    <!---------------------------------------- PRELOADER END ---------------------------------------->
-    
-    <!----------------------------------------   NAVBAR SCROLL   ---------------------------------------->
-    <script>
-      $(document).on("scroll",function (){
-        if($(document).scrollTop() > 100) {
-          $("nav").addClass("small");
-        }else {
-          $("nav").removeClass("small");
-        }
-      });
-    </script>
-    <!----------------------------------------   NAVBAR SCROLL   ---------------------------------------->
-    
-    <!---------------------------------------- SERVICES PROJECT PAGES START ---------------------------------------->
-        <script>    
-            $('.count').counterUp({
-              delay:10,
-              time:3000
-            })
-        </script>
-    <!---------------------------------------- SERVICES PROJECT PAGES END ---------------------------------------->
-    
-    <!---------------------------------------- SCROLL BUTTON ---------------------------------------->
-    <script>
-        mybutton = document.getElementById("mybtn");
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block"
-          } else {
-            mybutton.style.display = "none";
-          }
-        }
-        function topfunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-    </script>  
-    <!---------------------------------------- SCROLL BUTTON ---------------------------------------->
-
-
+<script>
+// PRELOADER
+var preloader = document.getElementById('loading');
+function myfunction(){
+    preloader.style.display = 'none';
+}
+// ANIMATION
+$(document).ready(function(){
+  $('.project--part1').waypoint(function(direction){
+    $('.project--part1').addClass('animated zoomInLeft')
+  }, {
+    offset: '50%'
+  })
+});
+$(document).ready(function(){
+  $('.project--part2').waypoint(function(direction){
+    $('.project--part2').addClass('animated zoomInDown')
+  }, {
+    offset: '50%'
+  })
+});
+$(document).ready(function(){
+  $('.project--part3').waypoint(function(direction){
+    $('.project--part3').addClass('animated zoomInUp')
+  }, {
+    offset: '50%'
+  })
+});
+$(document).ready(function(){
+  $('.project--part4').waypoint(function(direction){
+    $('.project--part4').addClass('animated zoomInRight')
+  }, {
+    offset: '50%'
+  })
+});
+$(document).ready(function(){
+  $('.offer--part1').waypoint(function(direction){
+    $('.offer--part1').addClass('animated fadeInLeft')
+  }, {
+    offset: '50%'
+  })
+});
+$(document).ready(function(){
+  $('.offer--part2').waypoint(function(direction){
+    $('.offer--part2').addClass('animated fadeInRight')
+  }, {
+    offset: '50%'
+  })
+});
+$(document).ready(function(){
+  $('.source--part1').waypoint(function(direction){
+    $('.source--part1').addClass('animated zoomIn')
+  }, {
+    offset: '50%'
+  })
+});
+$(document).ready(function(){
+  $('.source--part2').waypoint(function(direction){
+    $('.source--part2').addClass('animated zoomIn')
+  }, {
+    offset: '50%'
+  })
+});
+$(document).ready(function(){
+  $('.source-img--part1').waypoint(function(direction){
+    $('.source-img--part1').addClass('animated zoomInUp')
+  }, {
+    offset: '50%'
+  })
+});
+$(document).ready(function(){
+  $('.source-img--part2').waypoint(function(direction){
+    $('.source-img--part2').addClass('animated zoomInDown')
+  }, {
+    offset: '50%'
+  })
+});
+$(document).ready(function(){
+  $('.source-img--part3').waypoint(function(direction){
+    $('.source-img--part3').addClass('animated zoomInUp')
+  }, {
+    offset: '50%'
+  })
+});
+$(document).ready(function(){
+  $('.source-img--part4').waypoint(function(direction){
+    $('.source-img--part4').addClass('animated zoomInDown')
+  }, {
+    offset: '50%'
+  })
+});
+$(document).ready(function(){
+  $('.carousel--about').waypoint(function(direction){
+    $('.carousel--about').addClass('animated flipInY')
+  }, {
+    offset: '50%'
+  })
+});
+$(document).ready(function(){
+  $('.cont-feel--para').waypoint(function(direction){
+    $('.cont-feel--para').addClass('animated rotateIn')
+  }, {
+    offset: '50%'
+  })
+});
+$(document).ready(function(){
+  $('.cont--information').waypoint(function(direction){
+    $('.cont--information').addClass('animated fadeInDown')
+  }, {
+    offset: '50%'
+  })
+});
+$(document).ready(function(){
+  $('.cont--box').waypoint(function(direction){
+    $('.cont--box').addClass('animated fadeInUp')
+  }, {
+    offset: '50%'
+  })
+});
+// NAVBAR ANIMATION
+$(document).on("scroll",function (){
+  if($(document).scrollTop() > 100) {
+    $("nav").addClass("small");
+  }else {
+    $("nav").removeClass("small");
+  }
+});
+$(document).ready(function(){
+  $('.heading--animation-1').waypoint(function(direction){
+    $('.heading--animation-1').addClass('animated rotateIn')
+  }, {
+    offset: '50%'
+  })
+});
+$(document).ready(function(){
+  $('.heading--animation-2').waypoint(function(direction){
+    $('.heading--animation-2').addClass('animated rotateIn')
+  }, {
+    offset: '50%'
+  })
+});
+$(document).ready(function(){
+  $('.heading--animation-3').waypoint(function(direction){
+    $('.heading--animation-3').addClass('animated rotateIn')
+  }, {
+    offset: '50%'
+  })
+});
+$(document).ready(function(){
+  $('.heading--animation-4').waypoint(function(direction){
+    $('.heading--animation-4').addClass('animated rotateIn')
+  }, {
+    offset: '50%'
+  })
+});
+// COUNTING
+$('.count').counterUp({
+  delay:10,
+  time:3000
+})
+// TOP BUTTON
+mybutton = document.getElementById("mybtn");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block"
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topfunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>  
 
   </body>
 </html>
