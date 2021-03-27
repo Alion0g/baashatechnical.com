@@ -4,15 +4,13 @@ html{  scroll-behavior: smooth; -webkit-text-size-adjust: 100%; font-size: 62.5%
 :root{ --tran: all 0.4s linear;}
 a{ text-decoration: none; }
 
-/*------------------------------------  PRELOADER START   ------------------------------------*/
+/* PRELOADER */
 #loading{
     position: fixed; height: 100vh; width: 100%;
 	background: #fff url('../img/gif/preloader.gif') no-repeat center;
 	z-index: 999999; background-size: 5% 10%;	
 }
-/*------------------------------------   PRELOADER END   ------------------------------------*/
-
-/*------------------------------------   TOP NAVBAR AND FRON START   ------------------------------------*/
+/* FRONT PART */
 .bg_img{
 	height: 100vh; width: 100%;
 	background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url('../img/bac_imag.png'); 
@@ -26,10 +24,7 @@ a{ text-decoration: none; }
 .main_name,#button,#navbarNav ul li a{ transition: all .5s; }
 .main_name{ font-size: 4rem; letter-spacing: 0.15rem; font-weight: bold; margin-left: 4.5rem; }
 #navbarNav{ margin-right: 5rem; text-transform: uppercase; }
-#navbarNav ul li a{
-	color: #fff; font-weight: bold; font-size: 1.8rem;
-	letter-spacing: 2px; margin-right: 2rem;
-}
+#navbarNav ul li a{ color: #fff; font-weight: bold; font-size: 1.8rem; letter-spacing: 2px; margin-right: 2rem; }
 #navbarNav ul li a:hover{ color: orange; }
 .small{ height: 60px; background: rgba(0, 0, 0, 0.7);}
 .small .main_name{ font-size: 4rem; margin-top: 5px; }
@@ -38,14 +33,8 @@ a{ text-decoration: none; }
 .mid_section__name{ font-size: 5.5rem; margin-top: 8rem; }
 .mid_section__about{ font-size: 4rem; font-family: BA; margin-top: 0.5rem; }
 .animate{ font-size: 3.5rem; color: orange; position: relative; transition: .3s all ease; margin: 0 0 0 2rem; }
-.animate div li {
-    font-weight: bold; padding: 0 1rem; height: 4.5rem; color: #fff;
-    margin-bottom: 4.5rem; display: block;
-}
-.animate div{
-    overflow: hidden; position: relative; float: right;
-    height: 6rem; padding-top: 1rem; margin-top: -1rem;
-}
+.animate div li { font-weight: bold; padding: 0 1rem; height: 4.5rem; color: #fff; margin-bottom: 4.5rem; display: block; }
+.animate div{ overflow: hidden; position: relative; float: right; height: 6rem; padding-top: 1rem; margin-top: -1rem; }
 .flip {
     letter-spacing: 0.1rem;
     --webkit-animation: flip 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
@@ -78,14 +67,12 @@ a{ text-decoration: none; }
     background-color: #fff; border-radius: 50%; opacity: 1; animation: wheel 2s infinite;
 }
 @keyframes wheel{ to{ opacity: 0; top: 40px; } }
-/*------------------------------------   TOP NAVBAR AND FRON END   ------------------------------------*/
-/*------------------------------------   SERVICES PROJECT PAGES START   ------------------------------------*/
+/* WEBSITE CREATED */
 .project_work{ margin: 100px 0; }
 .heading{ font-size: 2.5rem; margin-bottom: 2rem; }
 .project_work h1{ font-size: 4rem; text-align: center; font-weight: bold; }
 .award{ font-weight: bold; letter-spacing: 1px; }
-/*------------------------------------   SERVICES PROJECT PAGES END   ------------------------------------*/
-/*------------------------------------   SERVICES OFFERS START   ------------------------------------*/
+/* OFFERS */
 .serviceoffers{ padding: 50px 0; margin-bottom: 50px; }
 .mainheading{ font-size: 4rem; margin-bottom: 50px; }
 .names h1{ color: #2e2e2e; font-size: 1.8rem; }
@@ -93,16 +80,11 @@ a{ text-decoration: none; }
 .servicediv h2{ font-size: 3rem; margin: 20px 0 2px 0; font-weight: bold; line-height: 1.1; word-spacing: 4px; }
 .service-icon{ font-size: 1.6rem; display: flex; justify-content: center; align-items: center; margin-top: -2.5rem; }
 .service_para{ font-size: 1.6rem; }
-/*------------------------------------   SERVICES OFFERS END   ------------------------------------*/
-
-
-/* ------------------------------------  SOURCECODE START  ------------------------------------ */
-
+/* SOURCECODE */
 .temp{ font-size: 3rem; margin-top:2.5rem; }
 .workandsourcecode h3{ font-size: 3rem; display: flex;  justify-content: center; align-items: center; margin-top:4.5rem; }
 .workandsourcecode .imag1,.imag2,.imag3,.imag4,.imag5,.imag6,.imag7,.imag8{ 
-    color: #fff; margin-left: 1rem; height:120px; width:200px;
-    background-size: 100% 100%; background-repeat: no-repeat;
+    color: #fff; margin-left: 1rem; height:120px; width:200px; background-size: 100% 100%; background-repeat: no-repeat;
 }
 .sourceimag{ margin: 5rem 0 1rem 6.5rem; }
 .imag1{ background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../img/A_Photographer.webp'); }
@@ -116,8 +98,7 @@ a{ text-decoration: none; }
 .imag8{ background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../img/student.jpg'); }
 .bg_sourceimg{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url('../img/Longue_Vue.webp');
-    height: 70vh; width: 95%; background-size: 100% 100%;
-    margin-left: 50%; transform: translateX(-50%); 
+    height: 70vh; width: 95%; background-size: 100% 100%; margin-left: 50%; transform: translateX(-50%); 
     margin-bottom: 5rem; margin-top: 4rem;
 }
 .bg_sourceimg h1{
@@ -149,9 +130,7 @@ a{ text-decoration: none; }
     letter-spacing: 1.5px; transition:var(--tran); margin-top: 1rem;
 }
 .first__div__sourceimg:hover .t_e_x_t{ opacity: 1; }
-/*------------------------------------   SOURCECODE END   ------------------------------------*/
-
-/* ------------------------------------ MERE BARE MAI THORA SAA ------------------------------------ */
+/* CAROUSEL ABOUT-ME */
 .carousel{
     height: 66vh; width: 100%; background-size: 100% 100%;
     background: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 1));
@@ -162,9 +141,7 @@ a{ text-decoration: none; }
 }
 .carousel h3{ font-size: 3rem; }
 .carousel p{ font-size: 1.8rem; margin-top: 6rem; }
-/* ------------------------------------ MERE BARE MAI THORA SAA ------------------------------------ */
-
-/* ------------------------------------ CONTACT SECTION START ------------------------------------ */
+/* CONTACT */
 .contact h1{ margin-top: 10rem; margin-bottom: 5rem; }
 .con__tact___info h3{ font-size: 3rem; }
 .con__tact___info p{ font-size: 1.8rem; margin: 2rem 0 2rem 0; }
@@ -191,24 +168,17 @@ a{ text-decoration: none; }
     border-radius: 1rem; border: none; outline: none;
 }
 .send_btn button:hover{ background: linear-gradient(234deg, rgb(116, 17, 255) 39%, rgb(175, 106, 252) 100%); }
-/* ------------------------------------ CONTACT SECTION END ------------------------------------ */
-
-/* ------------------------------------ COPYRIGHT BY ME START ------------------------------------ */
+/* COPYRIGHT */
 .copyright{ background: #030202; height: 10vh; margin-top: 10rem; }
 #copyright_icons{ font-size: 2rem; color: #fff; margin-right: 1rem; margin-top: 2.5rem; }
 #copyright_icons:hover{ transform: rotate(360deg); }
 .copyright_content p{ font-size: 1.6rem; margin-top: 2.5rem; color: #fff; }
-/* ------------------------------------ COPYRIGHT BY ME END ------------------------------------ */
-
-/* ------------------------------------ SCROLLL BUTTTON ------------------------------------ */
+/* TOP BUTTON */
 #mybtn{
     position: fixed; bottom: 35px; right: 20px; z-index: 99; border: none; color: #fff;
     background: #00abff; padding: 10px; border-radius: 10px; cursor: pointer;
 }
 #mybtn:hover{ background: #606060; }
-/* ------------------------------------ SCROLLL BUTTTON ------------------------------------ */
-
-
 
 /* ------------------------------------------------ RESPONSIVE CODE START ------------------------------------------------ */
 @media(max-width:360px){
@@ -299,18 +269,3 @@ a{ text-decoration: none; }
     #copyright_icons{ font-size: 2rem; margin-top: 1.5rem; }
     .copyright_content p{ font-size: 1.4rem; margin-top: 2rem; margin-bottom: -0.5rem; }
 }
-
-
-
-
-
-
-
-
-
-
-
-/* ----------------------------------------------------------------------------------------------------------------------- */
-            /* ESI KON SI CHIZ HAI JISE AAGE SE BHAGWAN NE BANAYA OR PICHHE SE INSAN NE BANAYA */
-            /* ANSWER == BELGARHY */
-/* ----------------------------------------------------------------------------------------------------------------------- */
