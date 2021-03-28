@@ -56,36 +56,36 @@
     <!-- PRELOADER -->
     <div id="loading"></div>
     <!-- FRONT PART -->
-    <div class="bg_img">
+    <div class="bg_img back--img">
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="total">
-        <h2 class="main_name navbar-brand text-white" href="?">MOHAMMAD <span class="text-warning">A</span>LI</h2>
-          <button class="navbar-toggler mr-4" id="button" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <h2 class="main_name navbar-brand text-white main-name--animation" href="?">MOHAMMAD <span class="text-warning">A</span>LI</h2>
+          <button class="navbar-toggler mr-4 nav-button-anim" id="button" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link  text-warning" title="HOME" href="#">Home</a>
+              <a class="nav-link home-nav--1  text-warning" title="HOME" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" title="SERVICES" href="#servicediv">Services</a>
+              <a class="nav-link serivces-nav--1" title="SERVICES" href="#servicediv">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" title="SOURCECODE" href="#sourcecode">SourceCode</a>
+              <a class="nav-link sourcecode-nav--1" title="SOURCECODE" href="#sourcecode">SourceCode</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" title="ABOUTUS" href="file:///F:/1%20=%20WEBSITES/PERSONAL/aboutus.html">About</a>
+              <a class="nav-link about-nav--1" title="ABOUTUS" href="file:///F:/1%20=%20WEBSITES/PERSONAL/aboutus.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" title="CONTACT" href="#contactme">Contact</a>
+              <a class="nav-link contact-nav--1" title="CONTACT" href="#contactme">Contact</a>
             </li>
           </ul>
         </div>
       </nav>
       <div class="mid_section d-flex justify-content-center align-items-center flex-column text-white">
-        <h1 class="mid_section__name font-weight-bold">Welcome to BaashaTechnical</h1>
-        <h3 class="mid_section__about">About Me</h3>
-        <h2 class="animate">
+        <h1 class="mid_section__name font-weight-bold mid-part--1">Welcome to BaashaTechnical</h1>
+        <h3 class="mid_section__about mid-part--1">About Me</h3>
+        <h2 class="animate mid-part--1">
           <span class="font-weight-bold">A WEBSITE FOR</span>
           <div>
             <ul class="flip">
@@ -96,14 +96,14 @@
             </ul>                
           </div>
         </h2>
-        <div class="social_icons">
+        <div class="social_icons mid-part--2">
           <a href="https://www.facebook.com/BaashaAlbido/" title="FACEBOOK" target="_fac"><i id="icons" class="fa fa-facebook-square"></i></a>
           <a href="https://www.instagram.com/baashaalbido/" title="INSTAGRAM" target="_ins"><i id="icons" class="fa fa-instagram"></i></a>
           <a href="https://twitter.com/BaashaAlbido" title="TWITTER" target="_twi"><i id="icons" class="fa fa-twitter-square"></i></a>
           <a href="https://github.com/Baasha01" title="GITHUB" target="_git"><i id="icons" class="fa fa-github-square"></i></a>
           <a href="https://www.youtube.com/channel/UCvcek9iSCYPOvP6IX9u4sXA" title="YOUTUBE" target="_ali"><i id="icons" class="fa fa-youtube-square"></i> </a>
         </div>
-        <div class="mouse_center">
+        <div class="mouse_center mid-part--2" title="Scroll Down">
           <div class="field">
             <div class="mouse"></div>
           </div>
@@ -298,7 +298,7 @@
           <p class="text-warning text-center">Mohammad Ali, CEO of BAASHA</p>
         </div>
         <div class="carousel-item" id="slideleft3">
-          <img src="img/IRONMAN.jpg" class="rounded-circle">
+          <img src="img/BAASHA.png" class="rounded-circle">
           <h3 class="text-center text-white my-5" style="letter-spacing:1.5px;">"Mohammad Ali aka BAASHA is a Web Developer.<br>BAASHA whant to help others by providing free video on Web<br>Development and School/University impoertant topics"</h3>
           <p class="text-warning text-center">Mohammad Ali, CEO of BAASHA</p>
         </div>
@@ -380,7 +380,7 @@
                 <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Message"></textarea>
               </div>
               <div class="send_btn">
-                <a href="index.html"><button type="submit">Send</button></a>
+                <a href="index.html"><button type="submit"><i class="fa fa-contact-square"></i>Send</button></a>
               </div>
             </div>        
           </div>
@@ -427,181 +427,244 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
 
-<script>
-// PRELOADER
-var preloader = document.getElementById('loading');
-function myfunction(){
-    preloader.style.display = 'none';
-}
-// ANIMATION
-$(document).ready(function(){
-  $('.project--part1').waypoint(function(direction){
-    $('.project--part1').addClass('animated zoomInLeft')
-  }, {
-    offset: '50%'
-  })
-});
-$(document).ready(function(){
-  $('.project--part2').waypoint(function(direction){
-    $('.project--part2').addClass('animated zoomInDown')
-  }, {
-    offset: '50%'
-  })
-});
-$(document).ready(function(){
-  $('.project--part3').waypoint(function(direction){
-    $('.project--part3').addClass('animated zoomInUp')
-  }, {
-    offset: '50%'
-  })
-});
-$(document).ready(function(){
-  $('.project--part4').waypoint(function(direction){
-    $('.project--part4').addClass('animated zoomInRight')
-  }, {
-    offset: '50%'
-  })
-});
-$(document).ready(function(){
-  $('.offer--part1').waypoint(function(direction){
-    $('.offer--part1').addClass('animated fadeInLeft')
-  }, {
-    offset: '50%'
-  })
-});
-$(document).ready(function(){
-  $('.offer--part2').waypoint(function(direction){
-    $('.offer--part2').addClass('animated fadeInRight')
-  }, {
-    offset: '50%'
-  })
-});
-$(document).ready(function(){
-  $('.source--part1').waypoint(function(direction){
-    $('.source--part1').addClass('animated zoomIn')
-  }, {
-    offset: '50%'
-  })
-});
-$(document).ready(function(){
-  $('.source--part2').waypoint(function(direction){
-    $('.source--part2').addClass('animated zoomIn')
-  }, {
-    offset: '50%'
-  })
-});
-$(document).ready(function(){
-  $('.source-img--part1').waypoint(function(direction){
-    $('.source-img--part1').addClass('animated zoomInUp')
-  }, {
-    offset: '50%'
-  })
-});
-$(document).ready(function(){
-  $('.source-img--part2').waypoint(function(direction){
-    $('.source-img--part2').addClass('animated zoomInDown')
-  }, {
-    offset: '50%'
-  })
-});
-$(document).ready(function(){
-  $('.source-img--part3').waypoint(function(direction){
-    $('.source-img--part3').addClass('animated zoomInUp')
-  }, {
-    offset: '50%'
-  })
-});
-$(document).ready(function(){
-  $('.source-img--part4').waypoint(function(direction){
-    $('.source-img--part4').addClass('animated zoomInDown')
-  }, {
-    offset: '50%'
-  })
-});
-$(document).ready(function(){
-  $('.carousel--about').waypoint(function(direction){
-    $('.carousel--about').addClass('animated flipInY')
-  }, {
-    offset: '50%'
-  })
-});
-$(document).ready(function(){
-  $('.cont-feel--para').waypoint(function(direction){
-    $('.cont-feel--para').addClass('animated rotateIn')
-  }, {
-    offset: '50%'
-  })
-});
-$(document).ready(function(){
-  $('.cont--information').waypoint(function(direction){
-    $('.cont--information').addClass('animated fadeInDown')
-  }, {
-    offset: '50%'
-  })
-});
-$(document).ready(function(){
-  $('.cont--box').waypoint(function(direction){
-    $('.cont--box').addClass('animated fadeInUp')
-  }, {
-    offset: '50%'
-  })
-});
-// NAVBAR ANIMATION
-$(document).on("scroll",function (){
-  if($(document).scrollTop() > 100) {
-    $("nav").addClass("small");
-  }else {
-    $("nav").removeClass("small");
-  }
-});
-$(document).ready(function(){
-  $('.heading--animation-1').waypoint(function(direction){
-    $('.heading--animation-1').addClass('animated rotateIn')
-  }, {
-    offset: '50%'
-  })
-});
-$(document).ready(function(){
-  $('.heading--animation-2').waypoint(function(direction){
-    $('.heading--animation-2').addClass('animated rotateIn')
-  }, {
-    offset: '50%'
-  })
-});
-$(document).ready(function(){
-  $('.heading--animation-3').waypoint(function(direction){
-    $('.heading--animation-3').addClass('animated rotateIn')
-  }, {
-    offset: '50%'
-  })
-});
-$(document).ready(function(){
-  $('.heading--animation-4').waypoint(function(direction){
-    $('.heading--animation-4').addClass('animated rotateIn')
-  }, {
-    offset: '50%'
-  })
-});
-// COUNTING
-$('.count').counterUp({
-  delay:10,
-  time:3000
-})
-// TOP BUTTON
-mybutton = document.getElementById("mybtn");
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block"
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-function topfunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>  
+    <script>
+    // PRELOADER
+    var preloader = document.getElementById('loading');
+    function myfunction(){
+        preloader.style.display = 'none';
+    }
+    // ANIMATION
+    $(document).ready(function(){
+      $('.main-name--animation').waypoint(function(direction){
+        $('.main-name--animation').addClass('animated fadeInDown')
+      }, {
+        offset: '50%'
+      })
+    });
+    $(document).ready(function(){
+      $('.home-nav--1').waypoint(function(direction){
+        $('.home-nav--1').addClass('animated zoomInLeft')
+      }, {
+        offset: '50%'
+      })
+    });
+    $(document).ready(function(){
+      $('.serivces-nav--1').waypoint(function(direction){
+        $('.serivces-nav--1').addClass('animated zoomInLeft')
+      }, {
+        offset: '50%'
+      })
+    });
+    $(document).ready(function(){
+      $('.sourcecode-nav--1').waypoint(function(direction){
+        $('.sourcecode-nav--1').addClass('animated zoomIn')
+      }, {
+        offset: '50%'
+      })
+    });
+    $(document).ready(function(){
+      $('.about-nav--1').waypoint(function(direction){
+        $('.about-nav--1').addClass('animated zoomInRight')
+      }, {
+        offset: '50%'
+      })
+    });
+    $(document).ready(function(){
+      $('.contact-nav--1').waypoint(function(direction){
+        $('.contact-nav--1').addClass('animated zoomInRight')
+      }, {
+        offset: '50%'
+      })
+    });
+    $(document).ready(function(){
+      $('.mid-part--1').waypoint(function(direction){
+        $('.mid-part--1').addClass('animated zoomInDown')
+      }, {
+        offset: '50%'
+      })
+    });
+    $(document).ready(function(){
+      $('.mid-part--2').waypoint(function(direction){
+        $('.mid-part--2').addClass('animated zoomInUp')
+      }, {
+        offset: '60%'
+      })
+    });
+    $(document).ready(function(){
+      $('.nav-button-anim').waypoint(function(direction){
+        $('.nav-button-anim').addClass('animated zoomInUp')
+      }, {
+        offset: '60%'
+      })
+    });
+    $(document).ready(function(){
+      $('.project--part1').waypoint(function(direction){
+        $('.project--part1').addClass('animated zoomInLeft')
+      }, {
+        offset: '50%'
+      })
+    });
+    $(document).ready(function(){
+      $('.project--part2').waypoint(function(direction){
+        $('.project--part2').addClass('animated zoomInDown')
+      }, {
+        offset: '50%'
+      })
+    });
+    $(document).ready(function(){
+      $('.project--part3').waypoint(function(direction){
+        $('.project--part3').addClass('animated zoomInUp')
+      }, {
+        offset: '50%'
+      })
+    });
+    $(document).ready(function(){
+      $('.project--part4').waypoint(function(direction){
+        $('.project--part4').addClass('animated zoomInRight')
+      }, {
+        offset: '50%'
+      })
+    });
+    $(document).ready(function(){
+      $('.offer--part1').waypoint(function(direction){
+        $('.offer--part1').addClass('animated fadeInLeft')
+      }, {
+        offset: '50%'
+      })
+    });
+    $(document).ready(function(){
+      $('.offer--part2').waypoint(function(direction){
+        $('.offer--part2').addClass('animated fadeInRight')
+      }, {
+        offset: '50%'
+      })
+    });
+    $(document).ready(function(){
+      $('.source--part1').waypoint(function(direction){
+        $('.source--part1').addClass('animated zoomIn')
+      }, {
+        offset: '50%'
+      })
+    });
+    $(document).ready(function(){
+      $('.source--part2').waypoint(function(direction){
+        $('.source--part2').addClass('animated zoomIn')
+      }, {
+        offset: '50%'
+      })
+    });
+    $(document).ready(function(){
+      $('.source-img--part1').waypoint(function(direction){
+        $('.source-img--part1').addClass('animated zoomInUp')
+      }, {
+        offset: '50%'
+      })
+    });
+    $(document).ready(function(){
+      $('.source-img--part2').waypoint(function(direction){
+        $('.source-img--part2').addClass('animated zoomInDown')
+      }, {
+        offset: '50%'
+      })
+    });
+    $(document).ready(function(){
+      $('.source-img--part3').waypoint(function(direction){
+        $('.source-img--part3').addClass('animated zoomInUp')
+      }, {
+        offset: '50%'
+      })
+    });
+    $(document).ready(function(){
+      $('.source-img--part4').waypoint(function(direction){
+        $('.source-img--part4').addClass('animated zoomInDown')
+      }, {
+        offset: '50%'
+      })
+    });
+    $(document).ready(function(){
+      $('.carousel--about').waypoint(function(direction){
+        $('.carousel--about').addClass('animated flipInY')
+      }, {
+        offset: '50%'
+      })
+    });
+    $(document).ready(function(){
+      $('.cont-feel--para').waypoint(function(direction){
+        $('.cont-feel--para').addClass('animated rotateIn')
+      }, {
+        offset: '50%'
+      })
+    });
+    $(document).ready(function(){
+      $('.cont--information').waypoint(function(direction){
+        $('.cont--information').addClass('animated fadeInDown')
+      }, {
+        offset: '50%'
+      })
+    });
+    $(document).ready(function(){
+      $('.cont--box').waypoint(function(direction){
+        $('.cont--box').addClass('animated fadeInUp')
+      }, {
+        offset: '50%'
+      })
+    });
+    // NAVBAR ANIMATION
+    $(document).on("scroll",function (){
+      if($(document).scrollTop() > 100) {
+        $("nav").addClass("small");
+      }else {
+        $("nav").removeClass("small");
+      }
+    });
+    $(document).ready(function(){
+      $('.heading--animation-1').waypoint(function(direction){
+        $('.heading--animation-1').addClass('animated rotateIn')
+      }, {
+        offset: '50%'
+      })
+    });
+    $(document).ready(function(){
+      $('.heading--animation-2').waypoint(function(direction){
+        $('.heading--animation-2').addClass('animated rotateIn')
+      }, {
+        offset: '50%'
+      })
+    });
+    $(document).ready(function(){
+      $('.heading--animation-3').waypoint(function(direction){
+        $('.heading--animation-3').addClass('animated rotateIn')
+      }, {
+        offset: '50%'
+      })
+    });
+    $(document).ready(function(){
+      $('.heading--animation-4').waypoint(function(direction){
+        $('.heading--animation-4').addClass('animated rotateIn')
+      }, {
+        offset: '50%'
+      })
+    });
+    // COUNTING
+    $('.count').counterUp({
+      delay:10,
+      time:3000
+    })
+    // TOP BUTTON
+    mybutton = document.getElementById("mybtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block"
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    function topfunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>  
 
   </body>
 </html>
