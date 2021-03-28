@@ -59,7 +59,7 @@ a{ text-decoration: none; }
 .fa-twitter-square:hover{ color:  #00acee!important;}
 .fa-github-square:hover{ color: #000!important;}
 .fa-youtube-square:hover{ color:#FF0000!important;}
-.mouse_center{ display: flex; align-items: center; justify-content: center; margin-top: 25px; }
+.mouse_center{ display: flex; align-items: center; justify-content: center; margin-top: 25px; cursor: pointer; }
 .field{ display: flex; align-items: center; justify-content: space-around; width: 33px; }
 .mouse{ width: 50px; height: 55px; border: 2px solid #fff; border-radius: 60px; position: relative; }
 .mouse:before{
